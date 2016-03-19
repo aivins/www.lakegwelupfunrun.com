@@ -241,7 +241,7 @@ h3 {
 }
 .navbar-fixed-top.navbar-home {
   padding-top: 0px !important;
-  background-color: #252321 !important;
+  background-color: rgba(48,170,48,0.75) !important;
   opacity: 0.90 !important;
 }
 .navbar-fixed-top.navbar-home .navbar-header .navbar-brand {
@@ -524,7 +524,7 @@ h3 {
  *  
  */
 .scedule-background {
-  background: url('../images/bg-3.jpg') top center fixed;
+  background: url('../images/indexbg2.jpg') top center fixed;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -957,7 +957,7 @@ h3 {
  *  
  */
 .twitter-background {
-  background: url('../images/bg-3.jpg') top center fixed;
+  background: url('../images/indexbg2.jpg') top center fixed;
   background-size: cover;
   background-repeat: no-repeat;
 }

@@ -1,14 +1,65 @@
----
-layout: default
----
-<article class="post">
+<!DOCTYPE html>
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en-US"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en-US"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html lang="en">
+    
+    {% include head.html %}
 
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-  </header>
+    <body>
 
-  <div class="post-content">
-    {{ content }}
-  </div>
+    {% include header.html %}
 
-</article>
+
+        <section class="blog-body"><!-- Start: Blog Body Area" -->
+            <div class="container">
+                <div class="row">
+                    
+                    <!-- Blog Left area Start Here -->
+                    <div  class="bolg-body-left col-md-8 col-sm-12 col-xs-12">
+                        
+                        <!-- Start: Image Slider Blog Post  -->
+                        <div class="blog-post wow fadeInUp animated" data-wow-offset="10" data-wow-duration="1.5s">
+
+                            {{ content }}
+
+                        </div>
+                        <!-- End: Image Slider Blog Post  -->
+
+                    </div>
+                    <!-- Blog Left area End Here -->
+                    
+                    
+
+                </div><!-- End: row  -->
+            </div><!-- End: container  -->
+        </section><!-- End: Blog Body Area -->
+        
+
+       {% include footer.html %} 
+
+
+
+        <!-- SCRIPTS -->
+        <script src="/js/jquery-1.11.3.min.js"></script> 
+        <script src="/bootstrap/js/bootstrap.min.js"></script>
+        <script src="/js/jquery.stellar.min.js"></script>
+        <script src="/js/jquery.scrollTo.min.js"></script>
+        <script src="/js/jquery.localScroll.min.js"></script>
+        <script src="/js/owl.carousel.min.js"></script>  
+        <script src="/js/jquery.nav.js"></script>    
+        <script src="/js/wow.min.js"></script>               
+        <script src="/js/jquery.nicescroll.min.js"></script>
+        <script src="/js/matchMedia.js"></script>
+        <script src="/js/navbar.matchMedia.js"></script>
+        <script src="/js/jquery.flexslider-min.js"></script>
+        
+        <script src="/js/navbar-custom.js"></script> 
+        <script src="/js/blog-custom.js"></script> 
+        <script src="/lightbox/js/lightbox.js"></script> 
+
+
+    
+    </body>
+
+</html>

@@ -1,0 +1,84 @@
+
+ 
+
+<header class="header-background header" id="header" data-stellar-background-ratio="0.5"> <!--Start: "Header Area"-->
+    <div class="fix header-overlay overlay-color">
+
+        <!-- Start: Navbar Area  -->
+        <div class="header-navbar navbar-fixed-top" id="header-navbar" style="background-color: rgba(48,170,48,0.75)">
+            <nav class="navbar navbar-inverse">
+                <div class="container">
+                    <div class="navbar-header">
+
+                        <!-- Show in Mobile -->
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                            <span class="icon-bar icon-close-1"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar icon-close-2"></span> 
+                        </button>
+
+                        <!-- Your Icon Goes Here -->
+                        <a class="navbar-brand" href="index.html">
+                            <!-- <img src="images/lglogo.png" class="img-responsive" alt=""> -->
+                            <span>{{ site.title }}</span>
+                        </a> 
+
+                    </div>
+
+                    <!-- Show in Dexktop -->
+                    <button type="button" class="navbar-toggle navbar-cus hidden-xs " id="navbar-cus">
+                        <span class="lines"></span>
+                    </button>
+
+                    <!-- Navbar Option -->
+                    <div id="myNavbar">
+                        <ul id="navbar-nav" class="myNavbarUl nav navbar-nav navbar-right slideOutRight">
+                            <li><a href="#header">Home</a></li>
+                            <li><a href="#section-1">Course Info</a></li>
+                            <li><a href="{{ site.registerlink }}">Register</a></li>
+                            <li><a href="#section-10">Merchandise</a></li>
+                            <li><a href="photos/">Gallery</a></li> 
+                            <li><a href="#section-7">Sponsors</a></li> 
+                        </ul>
+                    </div>
+                </div> <!-- End: container  -->
+            </nav> <!-- End: navbar navbar-inverse  -->
+        </div>
+        <!-- End: Navbar Area  -->
+        
+        <div class="container">
+            <div class="row header-body" id="header-body">
+
+                <!-- Start: CountDown area -->
+                <div class="count_down fadeInDown animated" data-wow-offset="120" data-wow-duration="1.5s">
+                </div>
+                <!-- End: CountDown area -->
+
+                <div class="clearfix">
+                </div>
+
+                <div class="col-md-offset-1 col-md-5 heading fadeInUp animated" data-wow-offset="120" data-wow-duration="1.5s">
+                    <h1><b>JOIN US FOR A</b><br><b> DAY OF FUN!</h1>
+                </div>
+
+                <div class="col-md-5 pera fadeInUp animated" data-wow-offset="120" data-wow-duration="1.5s">
+                    <p>The Lake Gwelup Fun Run is a Fun Family Day. You can walk or run the 3 km or 6 km Fun Run!</p>
+                    <p>Enjoy The Excitement And Variety Of Rides And Activities All Morning Long. There Will Be Food, Stalls, Games, Live Music And More!</p>
+
+                    <!-- Start: Button area -->
+                    <div class="buy-tricket btn-scroll">
+                        <div class="btn-group">
+                            <a href="{{ site.registerlink }}" class="btn-fill btn-standard btn btn-cus">Register Now!</a>
+                        </div>
+                    </div>
+                    <!-- End: Button area" -->
+
+                </div><!-- End: col-md-5 pera  -->
+
+
+            </div><!-- End: header-body  -->
+        </div> <!-- End: container  -->
+
+
+    </div> <!-- End: fix header-overlay overlay-color  -->
+</header> <!--End: Header Area-->

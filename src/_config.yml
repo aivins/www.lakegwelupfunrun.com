@@ -5,4 +5,5 @@ description: >
 baseurl: ""
 url: "http://www.lakegwelupfunrun.com" 
 markdown: kramdown
-
+registerlink: "https://secure.onreg.com/onreg2/front/step1.php?id=2777"
+gems: [jekyll-gallery-generator]

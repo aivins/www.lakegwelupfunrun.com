@@ -1,27 +1,64 @@
-<header class="site-header">
 
-  <div class="wrapper">
+         
 
-    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+        <header class="header-background header" id="header" data-stellar-background-ratio="0.5"> <!--Start: "Header Area"-->
+            <div class="fix header-overlay overlay-color">
 
-    <nav class="site-nav">
-      <a href="#" class="menu-icon">
-        <svg viewBox="0 0 18 15">
-          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
-          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
-          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
-        </svg>
-      </a>
+                <!-- Start: Navbar Area  -->
+                <div class="header-navbar navbar-fixed-top" id="header-navbar" style="background-color: rgba(48,170,48,0.75)">
+                    <nav class="navbar navbar-inverse">
+                        <div class="container">
+                            <div class="navbar-header">
 
-      <div class="trigger">
-        {% for my_page in site.pages %}
-          {% if my_page.title %}
-          <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
-          {% endif %}
-        {% endfor %}
-      </div>
-    </nav>
+                                <!-- Show in Mobile -->
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                                    <span class="icon-bar icon-close-1"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar icon-close-2"></span> 
+                                </button>
 
-  </div>
+                                <!-- Your Icon Goes Here -->
+                                <a class="navbar-brand" href="/">
+                                    <!-- <img src="images/lglogo.png" class="img-responsive" alt=""> -->
+                                    <span>{{ site.title }}</span>
+                                </a> 
 
-</header>
+                            </div>
+
+                            <!-- Show in Dexktop -->
+                            <button type="button" class="navbar-toggle navbar-cus hidden-xs " id="navbar-cus">
+                                <span class="lines"></span>
+                            </button>
+
+                            <!-- Navbar Option -->
+                            <div id="myNavbar">
+                                <ul id="navbar-nav" class="myNavbarUl nav navbar-nav navbar-right slideOutRight">
+                                    <li><a href="#header">Home</a></li>
+                                    <li><a href="#section-1">Course Info</a></li>
+                                    <li><a href="{{ site.registerlink }}">Register</a></li>
+                                    <li><a href="#section-10">Merchandise</a></li>
+                                    <li><a href="photos/">Gallery</a></li> 
+                                    <li><a href="#section-7">Sponsors</a></li> 
+                                </ul>
+                            </div>
+                        </div> <!-- End: container  -->
+                    </nav> <!-- End: navbar navbar-inverse  -->
+                </div>
+                <!-- End: Navbar Area  -->
+                
+                <div class="container">
+                    <div class="row header-body" id="header-body" style="margin-top: 100px">
+
+
+                        <div class="col-md-offset-1 col-md-5 heading fadeInUp animated" data-wow-offset="120" data-wow-duration="1.5s">
+                            <h1>{{ page.title }}</h1>
+                        </b>
+
+
+
+                    </div><!-- End: header-body  -->
+                </div> <!-- End: container  -->
+
+
+            </div> <!-- End: fix header-overlay overlay-color  -->
+        </header> <!--End: Header Area-->

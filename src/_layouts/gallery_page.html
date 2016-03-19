@@ -1,0 +1,35 @@
+---
+layout: page
+---
+<style TYPE="text/css">
+.gallery-image-wrapper {
+  height: 300px;
+  width: 300px;
+  display: inline-block;
+  margin: 1em;
+  position: relative;
+}
+.gallery-image {
+  margin: auto;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  max-height: 100%;
+  max-width: 100%;
+}
+</style>
+
+<div class="container">
+
+{% for image in page.images %}
+  <div class="col-md-4" style="background-color: #eee; border: 1px solid #ccc">
+    <div class="gallery-image-wrapper" >
+        <a href="{{ image }}" data-lightbox="{{ image }}" data-title="{{ image }}">
+            <img class="gallery-image" src="thumbs/{{ image }}" />
+        </a>
+
+    </div>
+    {{image}}
+  </div>
+{% endfor %}
+</div>
